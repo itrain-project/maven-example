@@ -4,7 +4,7 @@ pipeline {
         stage('Code Checkout') { 
             steps {
                 sh 'echo code checkout'
-                git credentialsId: 'githubID', url: 'https://github.com/itrain-dreams/maven-example.git'
+                git credentialsId: 'githubid', url: 'https://github.com/itrain-dreams/maven-example.git'
             }
         }
         stage('Build') { 
